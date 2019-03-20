@@ -4,7 +4,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! is_user_logged_in() ) {
-	wp_redirect( fue_get_login_url( site_url( '/email-preferences' ) ) );
+	$email_preferences = get_option( 'fue_email_preferences_endpoint', 'email-preferences' );
+	wp_safe_redirect( fue_get_login_url( site_url( "/$email_preferences" ) ) );
 	exit;
 }
 

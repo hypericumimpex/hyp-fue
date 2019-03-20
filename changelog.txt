@@ -1,5 +1,10 @@
 *** WooCommerce Follow-Up Emails ***
 
+2019-03-19 - version 4.8.8
+* Fix:    Fatal Error when sending an email for a product which no longer exists.
+* Fix:    Endpoints in settings were not being used.
+* Fix:    Potential error when filtering on woocommerce_product_get_image due to missing sixth parameter.
+
 2019-03-04 - version 4.8.7
 * Fix:    Email column undefined error when subscription is inactive.
 * Fix:    Single emails lost duplicate functionality.

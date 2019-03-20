@@ -1180,34 +1180,36 @@ class FUE_Addon_Woocommerce_Mailer {
 		if ( !empty($queue_item->product_id) ) {
 			$_product   = WC_FUE_Compatibility::wc_get_product( $queue_item->product_id );
 
-			if ( $_product->has_child() ) {
-				$variation_ids = $_product->get_children();
-			}
-
-			$item_sku   = $_product->get_sku();
-			$cats       = get_the_terms( $_product->get_id(), 'product_cat' );
-
-			if (is_array($cats) && !empty($cats)) {
-				foreach ($cats as $cat) {
-					$categories .= $cat->name .', ';
+			if ( $_product ) {
+				if ( $_product->has_child() ) {
+					$variation_ids = $_product->get_children();
 				}
-				$categories = rtrim($categories, ', ');
-			}
 
-			if ( method_exists( $_product, 'get_permalink' ) ) {
-				$product_permalink = $_product->get_permalink();
-			} else {
-				$product_permalink = get_permalink($queue_item->product_id);
-			}
+				$item_sku   = $_product->get_sku();
+				$cats       = get_the_terms( $_product->get_id(), 'product_cat' );
 
-			$item_url = FUE_Sending_Mailer::create_email_url(
-				$queue_item->id,
-				$queue_item->email_id,
-				$email_data['user_id'],
-				$email_data['email_to'],
-				$product_permalink
-			);
-			$item_name = FUE_Addon_Woocommerce::get_product_name( $queue_item->product_id );
+				if (is_array($cats) && !empty($cats)) {
+					foreach ($cats as $cat) {
+						$categories .= $cat->name .', ';
+					}
+					$categories = rtrim($categories, ', ');
+				}
+
+				if ( method_exists( $_product, 'get_permalink' ) ) {
+					$product_permalink = $_product->get_permalink();
+				} else {
+					$product_permalink = get_permalink($queue_item->product_id);
+				}
+
+				$item_url = FUE_Sending_Mailer::create_email_url(
+					$queue_item->id,
+					$queue_item->email_id,
+					$email_data['user_id'],
+					$email_data['email_to'],
+					$product_permalink
+				);
+				$item_name = FUE_Addon_Woocommerce::get_product_name( $queue_item->product_id );
+			}
 
 			$order = WC_FUE_Compatibility::wc_get_order( $queue_item->order_id );
 

@@ -43,7 +43,11 @@
 				$image = '';
 			}
 
-			return apply_filters( 'woocommerce_product_get_image', $image, $product, $size, $attr, $placeholder );
+			if ( version_compare( WC_VERSION, '3.3.2', '<' ) ) {
+				return apply_filters( 'woocommerce_product_get_image', $image, $product, $size, $attr, $placeholder );
+			} else {
+				return apply_filters( 'woocommerce_product_get_image', $image, $product, $size, $attr, $placeholder, $image );
+			}
 		}
 	}
 

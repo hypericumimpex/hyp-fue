@@ -1259,14 +1259,16 @@ function fue_subscriber_email_exists( $email ) {
  * Get the URL to the unsubscribe endpoint
  */
 function fue_get_unsubscribe_url() {
-	return apply_filters( 'fue_email_unsubscribe_url', site_url( '/unsubscribe/' ) );
+	$unsubscribe = get_option( 'fue_unsubscribe_endpoint', 'unsubscribe' );
+	return apply_filters( 'fue_email_unsubscribe_url', site_url( "/$unsubscribe/" ) );
 }
 
 /**
  * Get the URL to the email-subscriptions endpoint
  */
 function fue_get_email_subscriptions_url() {
-	return apply_filters( 'fue_email_subscriptions_unsubscribe_url', site_url( '/my-account/email-subscriptions/' ) );
+	$email_subscriptions = get_option( 'fue_email_subscriptions_endpoint', 'email-subscriptions' );
+	return apply_filters( 'fue_email_subscriptions_unsubscribe_url', site_url( "/my-account/$email_subscriptions/" ) );
 }
 
 /**
