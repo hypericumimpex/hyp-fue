@@ -1653,3 +1653,28 @@ function fue_get_cart_item_data( $cart_item, $flat = false ) {
 
 	return '';
 }
+
+add_action(
+	'woocommerce_loaded',
+	function () {
+		if ( ! function_exists( 'wc_esc_json' ) ) {
+			/**
+			 * Escape JSON for use on HTML or attribute text nodes.
+			 * Added to WC 3.5.5, defined here if using older WC
+			 *
+			 * @param string $json JSON to escape.
+			 * @param bool $html True if escaping for HTML text node, false for attributes. Determines how quotes are handled.
+			 *
+			 * @return string Escaped JSON.
+			 */
+			function wc_esc_json( $json, $html = false ) {
+				return _wp_specialchars(
+					$json,
+					$html ? ENT_NOQUOTES : ENT_QUOTES, // Escape quotes in attribute nodes only.
+					'UTF-8',                           // json_encode() outputs UTF-8 (really just ASCII), not the blog's charset.
+					true                               // Double escape entities: `&amp;` -> `&amp;amp;`.
+				);
+			}
+		}
+	}
+);

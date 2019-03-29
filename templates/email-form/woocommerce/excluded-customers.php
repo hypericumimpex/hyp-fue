@@ -25,7 +25,7 @@
 			data-multiple="true"
 			data-placeholder="<?php _e('Search for products&hellip;', 'follow_up_emails'); ?>"
 			value="<?php echo implode( ',', array_keys( $json_ids ) ); ?>"
-			data-selected="<?php echo esc_attr( json_encode( $json_ids ) ); ?>"
+			data-selected="<?php echo wc_esc_json( json_encode( $json_ids ) ); ?>"
 			style="width: 400px;"
 		>
 	</p>

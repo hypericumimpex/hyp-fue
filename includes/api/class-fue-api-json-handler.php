@@ -70,10 +70,10 @@ class FUE_API_JSON_Handler implements FUE_API_Handler {
 			Follow_Up_Emails::instance()->api->server->header( 'X-Content-Type-Options', 'nosniff' );
 
 			// Prepend '/**/' to mitigate possible JSONP Flash attacks
-			return '/**/' . $_GET['_jsonp'] . '(' . json_encode( $data ) . ')';
+			return '/**/' . $_GET['_jsonp'] . '(' . wp_json_encode( $data ) . ')';
 		}
 
-		return json_encode( $data );
+		return wp_json_encode( $data );
 	}
 
 }

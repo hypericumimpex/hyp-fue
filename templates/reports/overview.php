@@ -16,10 +16,14 @@
 	</div>
 </div>
 
+<?php
+$json_encode_options = JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT;
+?>
+
 <script>
-var clicks_json = <?php echo json_encode($clicks_data); ?>;
-var opens_json = <?php echo json_encode($opens_data); ?>;
-var ctor_json = <?php echo json_encode($ctor_data); ?>;
+var clicks_json = <?php echo wp_json_encode( $clicks_data, $json_encode_options ); ?>;
+var opens_json = <?php echo wp_json_encode( $opens_data, $json_encode_options ); ?>;
+var ctor_json = <?php echo wp_json_encode( $ctor_data, $json_encode_options ); ?>;
 
 var clicks_rendered = opens_rendered = ctor_rendered = false;
 </script>

@@ -39,7 +39,6 @@ jQuery(document).ready(function($) {
             ajaxurl,
             params,
             function( resp ) {
-                resp = $.parseJSON(resp);
 
                 if (! resp ) {
                     alert("There was an error executing the request. Please try again later.");
@@ -72,7 +71,6 @@ jQuery(document).ready(function($) {
         }
 
         xhr = $.post( ajaxurl, params, function( resp ) {
-            resp = $.parseJSON(resp);
 
             if ( resp.error ) {
                 $("#log").append('<p class="failure"><span class="dashicons dashicons-no"></span> Error: '+ resp.error +'</p>');

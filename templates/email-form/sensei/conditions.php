@@ -20,7 +20,7 @@ $lesson = (!empty( $conditions[ $idx ]['lessons'] ) ) ? $conditions[ $idx ]['les
 		data-placeholder="<?php _e('Any course', 'follow_up_emails'); ?>"
 		style="width: 500px;"
 		value="<?php echo implode( ',', array_keys( $json_ids ) ); ?>"
-		data-selected="<?php echo esc_attr( json_encode( $json_ids ) ); ?>"
+		data-selected="<?php echo wc_esc_json( json_encode( $json_ids ) ); ?>"
 		data-nonce="<?php echo wp_create_nonce("search-courses"); ?>"
 		>
 </div>
@@ -42,7 +42,7 @@ $lesson = (!empty( $conditions[ $idx ]['lessons'] ) ) ? $conditions[ $idx ]['les
 		data-placeholder="<?php _e('Search for lessons...', 'follow_up_emails'); ?>"
 		style="width: 500px;"
 		value="<?php echo implode( ',', array_keys( $json_ids ) ); ?>"
-		data-selected="<?php echo esc_attr( json_encode( $json_ids ) ); ?>"
+		data-selected="<?php echo wc_esc_json( json_encode( $json_ids ) ); ?>"
 		data-nonce="<?php echo wp_create_nonce("search-lessons"); ?>"
 		>
 </div>

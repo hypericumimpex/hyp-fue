@@ -173,7 +173,7 @@ else
 													data-placeholder="Search for a product..."
 													style="width: 400px"
 													value="<?php echo implode( ',', array_keys( $json_ids ) ); ?>"
-													data-selected="<?php echo esc_attr( json_encode( $json_ids ) ); ?>"
+													data-selected="<?php echo wc_esc_json( json_encode( $json_ids ) ); ?>"
 													>
 
 												<span class="description"><?php _e('Products which need to be in the cart to use this coupon or, for &quot;Product Discounts&quot;, which products are discounted.', 'follow_up_emails'); ?></span>

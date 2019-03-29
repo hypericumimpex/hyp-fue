@@ -217,7 +217,7 @@ class FUE_AJAX {
 			);
 		}
 
-		die(json_encode($resp));
+		wp_send_json( $resp );
 	}
 
 	/**
@@ -228,7 +228,7 @@ class FUE_AJAX {
 	public static function get_post_custom_fields() {
 		$id     = isset($_POST['id']) ? $_POST['id'] : 0;
 		$meta   = get_post_custom($id);
-		die(json_encode($meta));
+		wp_send_json( $meta );
 	}
 
 	/**
@@ -291,7 +291,7 @@ class FUE_AJAX {
 
 		$all_users = apply_filters( 'fue_user_search', $all_users, $term );
 
-		die(json_encode($all_users));
+		wp_send_json( $all_users );
 	}
 
 	/**
@@ -421,7 +421,7 @@ class FUE_AJAX {
 
 		$results = apply_filters( 'fue_email_query', $results, $term, $all_emails );
 
-		die(json_encode($results));
+		wp_send_json( $results );
 	}
 
 	/**
@@ -490,7 +490,7 @@ class FUE_AJAX {
 			}
 		}
 
-		die(json_encode($results));
+		wp_send_json( $results );
 	}
 
 	/**
@@ -560,7 +560,7 @@ class FUE_AJAX {
 			$resp['new_action'] = __('Activate', 'follow_up_emails');
 		}
 
-		die(json_encode($resp));
+		wp_send_json ($resp );
 	}
 
 	/**
@@ -599,7 +599,7 @@ class FUE_AJAX {
 			$resp['new_action'] = __('Re-enable', 'follow_up_emails');
 		}
 
-		die(json_encode($resp));
+		wp_send_json( $resp );
 	}
 
 	/**
@@ -918,7 +918,7 @@ class FUE_AJAX {
 
 		$resp['status_html'] = __('Archived', 'follow_up_emails') .'<br/><small><a href="#" class="unarchive" data-id="'. $id .'" data-key="'. $type .'">'. __('Activate', 'follow_up_emails') .'</a></small>';
 
-		die(json_encode($resp));
+		wp_send_json( $resp );
 	}
 
 	/**
@@ -938,7 +938,7 @@ class FUE_AJAX {
 		<small><a href="#" class="archive-email" data-id="'. $id .'" data-key="'. $email->get_type() .'">'. __('Archive', 'follow_up_emails') .'</a></small>';
 
 
-		die(json_encode($resp));
+		wp_send_json( $resp );
 	}
 
 	/**
@@ -1658,7 +1658,7 @@ class FUE_AJAX {
 
 		$count = $wpdb->get_var("SELECT COUNT(*) FROM {$wpdb->prefix}followup_email_orders WHERE is_sent = 0");
 
-		die( json_encode(array('total' => $count)) );
+		wp_send_json( array( 'total' => $count ) );
 	}
 
 	/**
@@ -1678,7 +1678,7 @@ class FUE_AJAX {
 		else
 			$usage = round($usage/1048576,2)." megabytes";
 
-		die( json_encode(array('next' => $next, 'usage' => $usage, 'limit' => $limit)) );
+		wp_send_json( array( 'next' => $next, 'usage' => $usage, 'limit' => $limit ) );
 	}
 
 	/**
@@ -2013,9 +2013,7 @@ class FUE_AJAX {
 
 		$found_products = apply_filters( 'woocommerce_json_search_found_products', $found_products );
 
-		echo json_encode( $found_products );
-
-		die();
+		wp_send_json( $found_products );
 	}
 
 	/**
@@ -2074,9 +2072,7 @@ class FUE_AJAX {
 
 		$found_coupons = apply_filters( 'woocommerce_json_search_found_coupons', $found_coupons );
 
-		echo json_encode( $found_coupons );
-
-		die();
+		wp_send_json( $found_coupons );
 	}
 
 	/**
@@ -2335,9 +2331,7 @@ class FUE_AJAX {
 
 		$found_products = apply_filters( 'woocommerce_json_search_found_products', $found_products );
 
-		echo json_encode( $found_products );
-
-		die();
+		wp_send_json( $found_products );
 	}
 
 	/**
@@ -2430,9 +2424,7 @@ class FUE_AJAX {
 
 		$found_products = apply_filters( 'wc_json_search_found_booking_products', $found_products );
 
-		echo json_encode( $found_products );
-
-		die();
+		wp_send_json( $found_products );
 	}
 
 	/**
@@ -3192,7 +3184,7 @@ class FUE_AJAX {
 	 */
 	private static function send_response( $array ) {
 	    @ob_clean();
-		die( json_encode( $array ) );
+		wp_send_json( $array ) ;
 	}
 
 	/**

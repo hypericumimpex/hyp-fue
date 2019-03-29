@@ -36,7 +36,7 @@ if ( isset($_GET['ref']) ) {
 }
 ?>
 <script>
-	var email_id    = <?php echo (empty($_GET['email'])) ? 0 : json_encode($_GET['email']); ?>;
+	var email_id    = decodeURIComponent( '<?php echo urlencode( empty( $_GET['email'] ) ) ? 0 : esc_js( $_GET['email'] ); ?>' );
 	var return_url  = '<?php echo $return; ?>';
 </script>
 <div class="wrap">

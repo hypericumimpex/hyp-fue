@@ -213,7 +213,6 @@ if ( isset($_POST) && !empty($_POST) ) {
 </div>
 
 <script type="text/javascript">
-var interval_types = <?php echo json_encode($email->get_email_type()->triggers); ?>;
 jQuery(document).ready(function($) {
 	$("#frm").submit(function() {
 		$("#save").attr("disabled", true);

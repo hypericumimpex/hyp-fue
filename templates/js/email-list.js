@@ -49,8 +49,6 @@ jQuery(window).load(function(){
             };
 
             jQuery.post(ajaxurl, data, function(resp) {
-                resp = JSON.parse(resp);
-
                 if (resp.status == "OK") {
                     window.location.href = resp.url;
                 } else {

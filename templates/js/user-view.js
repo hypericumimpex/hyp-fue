@@ -103,7 +103,6 @@ jQuery(document).ready(function($){
         $(parent).block({ message: null, overlayCSS: { background: '#fff url('+ FUE.ajax_loader +') no-repeat center', opacity: 0.6 } });
 
         $.post(ajaxurl, data, function(resp) {
-            resp = $.parseJSON(resp);
             if (resp.ack != "OK") {
                 alert(resp.error);
             } else {

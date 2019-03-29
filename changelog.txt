@@ -1,5 +1,8 @@
 *** WooCommerce Follow-Up Emails ***
 
+2019-03-26 - version 4.8.9
+* Fix:    Event emails based on start/end date not scheduled
+
 2019-03-19 - version 4.8.8
 * Fix:    Fatal Error when sending an email for a product which no longer exists.
 * Fix:    Endpoints in settings were not being used.

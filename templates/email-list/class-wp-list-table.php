@@ -1312,7 +1312,7 @@ class WP_List_Table {
 			$response['total_pages_i18n'] = number_format_i18n( $this->_pagination_args['total_pages'] );
 		}
 
-		die( wp_json_encode( $response ) );
+		wp_send_json( $response );
 	}
 
 	/**

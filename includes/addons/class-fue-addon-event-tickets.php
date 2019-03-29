@@ -59,7 +59,7 @@ class FUE_Addon_Event_Tickets extends  FUE_Addon_Wootickets {
 	}
 
 	/**
-	 * Add 'after_rsvp' emails to the queue
+	 * Add 'after_tribe_rsvp', 'before_tribe_event_starts' and 'after_tribe_event_ends' emails to the queue
 	 *
 	 * @param int $product_id
 	 * @param int $order_id
@@ -75,7 +75,7 @@ class FUE_Addon_Event_Tickets extends  FUE_Addon_Wootickets {
 			AND p.post_status = '". FUE_Email::STATUS_ACTIVE ."'
 			AND pm.post_id = p.ID
 			AND pm.meta_key = '_interval_type'
-			AND pm.meta_value = 'after_tribe_rsvp'
+			AND pm.meta_value IN ('after_tribe_rsvp', 'before_tribe_event_starts', 'after_tribe_event_ends')
 			ORDER BY menu_order ASC"
 		);
 

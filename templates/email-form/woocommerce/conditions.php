@@ -27,7 +27,7 @@ $condition_shipping_method  = !empty( $conditions[ $idx ]['shipping_method'] ) ?
 		data-multiple="true"
 		data-placeholder="<?php _e('Search for a product...', 'follow_up_emails'); ?>"
 		value="<?php echo implode( ',', array_keys( $json_ids ) ); ?>"
-		data-selected="<?php echo esc_attr( json_encode( $json_ids ) ); ?>"
+		data-selected="<?php echo wc_esc_json( json_encode( $json_ids ) ); ?>"
 	>
 </div>
 <div class="value-categories" style="display: none; margin: 5px 0 0 45px;">
