@@ -1,5 +1,9 @@
 *** WooCommerce Follow-Up Emails ***
 
+2019-04-03 - version 4.8.10
+* Tweak:  Points and Rewards - clarify Points Earned trigger, added trigger for total user points. 
+* Tweak:  WC 3.6 compatibility.
+
 2019-03-26 - version 4.8.9
 * Fix:    Event emails based on start/end date not scheduled
 

@@ -42,10 +42,15 @@ function points_rewards_toggle_fields( type ) {
 
 jQuery(document).ready(function($) {
     $("#fue-email-details").on("change", "#interval_type", function() {
+        $(".points-greater-than-meta").hide();
+        $(".points-total-greater-than-meta").hide();
+
         if ($(this).val() == "points_greater_than") {
             $(".points-greater-than-meta").show();
-        } else {
-            $(".points-greater-than-meta").hide();
+        }
+
+        if ($(this).val() == "points_total_greater_than") {
+            $(".points-total-greater-than-meta").show();
         }
     });
 });

@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3.0.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Follow-Up Emails 4.8.7\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-follow-up-emails\n"
-"POT-Creation-Date: 2019-03-22 00:27:27+00:00\n"
+"Project-Id-Version: Follow-Up Emails 4.8.10\n"
+"Report-Msgid-Bugs-To: https://docs.woocommerce.com\n"
+"POT-Creation-Date: 2019-04-03 19:01:53+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -155,43 +155,47 @@ msgid "After: Points Earned"
 msgstr ""
 
 #: includes/addons/class-fue-addon-points-and-rewards.php:54
-msgid "Earned Points is greater than"
+msgid "Earned Points per order is greater than"
 msgstr ""
 
-#: includes/addons/class-fue-addon-points-and-rewards.php:57
-msgid "Points and Rewards Emails"
+#: includes/addons/class-fue-addon-points-and-rewards.php:55
+msgid "Total earned points is greater than"
 msgstr ""
 
 #: includes/addons/class-fue-addon-points-and-rewards.php:58
+msgid "Points and Rewards Emails"
+msgstr ""
+
+#: includes/addons/class-fue-addon-points-and-rewards.php:59
 msgid "Points and Rewards Email"
 msgstr ""
 
-#: includes/addons/class-fue-addon-points-and-rewards.php:61
 #: includes/addons/class-fue-addon-points-and-rewards.php:62
+#: includes/addons/class-fue-addon-points-and-rewards.php:63
 msgid "Points and Rewards emails will send to a user based upon the point earnings status you define when creating your emails."
 msgstr ""
 
-#: includes/addons/class-fue-addon-points-and-rewards.php:94
+#: includes/addons/class-fue-addon-points-and-rewards.php:98
 msgid "Points &amp; Rewards: Customers that have over N points"
 msgstr ""
 
-#: includes/addons/class-fue-addon-points-and-rewards.php:95
+#: includes/addons/class-fue-addon-points-and-rewards.php:99
 msgid "Points &amp; Rewards: Customers that have under N points"
 msgstr ""
 
-#: includes/addons/class-fue-addon-points-and-rewards.php:240
+#: includes/addons/class-fue-addon-points-and-rewards.php:250
 msgid "The current user's number of points"
 msgstr ""
 
-#: includes/addons/class-fue-addon-points-and-rewards.php:241
+#: includes/addons/class-fue-addon-points-and-rewards.php:251
 msgid "The number of points earned"
 msgstr ""
 
-#: includes/addons/class-fue-addon-points-and-rewards.php:242
+#: includes/addons/class-fue-addon-points-and-rewards.php:252
 msgid "The description of the action"
 msgstr ""
 
-#: includes/addons/class-fue-addon-points-and-rewards.php:344
+#: includes/addons/class-fue-addon-points-and-rewards.php:354
 msgid "%d %s %s %d"
 msgstr ""
 

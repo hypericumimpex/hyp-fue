@@ -50,8 +50,9 @@ class FUE_Addon_Points_And_Rewards {
 	 */
 	public function register_email_type( $types ) {
 		$triggers = array(
-			'points_earned'         => __('After: Points Earned', 'wc_followup_emails'),
-			'points_greater_than'   => __('Earned Points is greater than', 'wc_followup_emails')
+			'points_earned'             => __( 'After: Points Earned', 'wc_followup_emails' ),
+			'points_greater_than'       => __( 'Earned Points per order is greater than', 'wc_followup_emails' ),
+			'points_total_greater_than' => __( 'Total earned points is greater than', 'wc_followup_emails' ),
 		);
 		$props = array(
 			'label'                 => __('Points and Rewards Emails', 'follow_up_emails'),
@@ -75,6 +76,9 @@ class FUE_Addon_Points_And_Rewards {
 		?>
 		<span class="points-greater-than-meta" style="display:none;">
 			<input type="text" style="width: 50px" name="meta[points_greater_than]" value="<?php if (isset($email->meta['points_greater_than'])) echo $email->meta['points_greater_than']; ?>" />
+		</span>
+		<span class="points-total-greater-than-meta" style="display:none;">
+			<input type="text" style="width: 50px" name="meta[points_total_greater_than]" value="<?php if (isset($email->meta['points_total_greater_than'])) echo $email->meta['points_total_greater_than']; ?>" />
 		</span>
 		<?php
 	}
@@ -186,7 +190,7 @@ class FUE_Addon_Points_And_Rewards {
 			'meta_query'    => array(
 				array(
 					'key'       => '_interval_type',
-					'value'     => array( 'points_earned', 'points_greater_than' ),
+					'value'     => array( 'points_earned', 'points_greater_than', 'points_total_greater_than' ),
 					'compare'   => 'IN'
 				)
 			)
@@ -197,6 +201,12 @@ class FUE_Addon_Points_And_Rewards {
 			if ( $email->interval_type == 'points_greater_than' ) {
 				$meta = maybe_unserialize( $email->meta );
 				if ( $points < $meta['points_greater_than'] ) continue;
+			}
+
+			if ( $email->interval_type == 'points_total_greater_than' ) {
+				$meta         = maybe_unserialize( $email->meta );
+				$total_points = WC_Points_Rewards_Manager::get_users_points( $user_id );
+				if ( $total_points < $meta['points_total_greater_than'] ) continue;
 			}
 
 			$insert = array(
