@@ -200,6 +200,7 @@ class FUE_Coupons {
 		update_post_meta( $coupon_id, 'usage_limit', $coupon->usage_limit );
 		update_post_meta( $coupon_id, 'usage_limit_per_user', $coupon->usage_limit_per_user );
 		update_post_meta( $coupon_id, 'expiry_date', $expiry );
+		update_post_meta( $coupon_id, 'date_expires', strtotime( $expiry ) );
 		update_post_meta( $coupon_id, 'apply_before_tax', ( 0 == $coupon->before_tax ) ? 'no' : 'yes' );
 		update_post_meta( $coupon_id, 'free_shipping', ( 0 == $coupon->free_shipping ) ? 'no' : 'yes' );
 		update_post_meta( $coupon_id, 'exclude_sale_items', ( 0 == $coupon->exclude_sale_items ) ? 'no' : 'yes' );

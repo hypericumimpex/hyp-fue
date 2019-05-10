@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3.0.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Follow-Up Emails 4.8.10\n"
+"Project-Id-Version: Follow-Up Emails 4.8.11\n"
 "Report-Msgid-Bugs-To: https://docs.woocommerce.com\n"
-"POT-Creation-Date: 2019-04-03 19:01:53+00:00\n"
+"POT-Creation-Date: 2019-05-08 19:08:39+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1293,31 +1293,31 @@ msgstr ""
 msgid "Consumer Key is invalid"
 msgstr ""
 
-#: includes/api/class-fue-api-authentication.php:261
+#: includes/api/class-fue-api-authentication.php:264
 msgid "Invalid Signature - failed to sort parameters"
 msgstr ""
 
-#: includes/api/class-fue-api-authentication.php:275
+#: includes/api/class-fue-api-authentication.php:278
 msgid "Invalid Signature - signature method is invalid"
 msgstr ""
 
-#: includes/api/class-fue-api-authentication.php:283
+#: includes/api/class-fue-api-authentication.php:286
 msgid "Invalid Signature - provided signature does not match"
 msgstr ""
 
-#: includes/api/class-fue-api-authentication.php:340
+#: includes/api/class-fue-api-authentication.php:343
 msgid "Invalid timestamp"
 msgstr ""
 
-#: includes/api/class-fue-api-authentication.php:348
+#: includes/api/class-fue-api-authentication.php:351
 msgid "Invalid nonce - nonce has already been used"
 msgstr ""
 
-#: includes/api/class-fue-api-authentication.php:382
+#: includes/api/class-fue-api-authentication.php:385
 msgid "The API key provided does not have read permissions"
 msgstr ""
 
-#: includes/api/class-fue-api-authentication.php:391
+#: includes/api/class-fue-api-authentication.php:394
 msgid "The API key provided does not have write permissions"
 msgstr ""
 

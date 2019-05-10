@@ -1,5 +1,9 @@
 *** WooCommerce Follow-Up Emails ***
 
+2019-05-08 - version 4.8.11
+* Fix:    Coupon expiry dates are not set.
+* Fix:    API permissions error with authentication.
+
 2019-04-03 - version 4.8.10
 * Tweak:  Points and Rewards - clarify Points Earned trigger, added trigger for total user points. 
 * Tweak:  WC 3.6 compatibility.

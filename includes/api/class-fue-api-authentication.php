@@ -181,17 +181,20 @@ class FUE_API_Authentication {
 
 		// if consumer_key could not be found, check if it matches a consumer key for WooCommerce
 		if ( empty( $users[0] ) ) {
-			$sql = $wpdb->prepare( "SELECT user_id
+			$sql = $wpdb->prepare( "SELECT user_id, permissions
 					FROM {$wpdb->prefix}woocommerce_api_keys
 					WHERE consumer_key = %s", wc_api_hash( sanitize_text_field( $consumer_key ) ) );
 
-			$user_id = $wpdb->get_var( $sql );
+			$row = $wpdb->get_row( $sql );
 
-			if ( empty( $user_id ) ) {
+			if ( empty( $row ) || empty( $row->user_id ) ) {
 				throw new Exception( __( 'Consumer Key is invalid', 'follow_up_emails' ), 401 );
 			}
 
-			return new WP_User( absint( $user_id ) );
+			$user = new WP_User( absint( $row->user_id ) );
+			$user->woocommerce_api_key_permissions = $row->permissions;
+
+			return $user;
 		}
 
 
