@@ -7,6 +7,7 @@ Thumbs.db
 .buildpath
 .project
 .settings*
+.vscode
 sftp-config.json
 /deploy/
 /wc-apidocs/
@@ -16,7 +17,6 @@ sftp-config.json
 !/logs/.htaccess
 
 /vendor/
-composer.lock
 
 tests/e2e/config/local-*
 .eslintcache

@@ -3,7 +3,7 @@
  * Plugin Name: HYP Follow-Up Emails
  * Plugin URI: https://github.com/hypericumimpex/hyp-fue/
  * Description: Automate your email marketing, and create scheduled newletters to drive customer engagement for WordPress, WooCommerce, and Sensei.
- * Version: 4.8.11
+ * Version: 4.8.13
  * Author: WooCommerce
  * Author URI: https://github.com/hypericumimpex/
  * Text domain: follow_up_emails
@@ -18,7 +18,7 @@
  */
 
 /** Path and URL constants **/
-define( 'FUE_VERSION', '4.8.11' );
+define( 'FUE_VERSION', '4.8.13' );
 define( 'FUE_KEY', 'aHR0cDovLzc1bmluZXRlZW4uY29tL2Z1ZS5waH' );
 define( 'FUE_FILE', __FILE__ );
 define( 'FUE_URL', plugins_url( '', __FILE__ ) );

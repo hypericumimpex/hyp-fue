@@ -1,5 +1,12 @@
 *** WooCommerce Follow-Up Emails ***
 
+2019-06-11 - version 4.8.13
+* Fix:    {order_pay_url} doesn't work in Abandonment Emails.
+* Fix:    Assign purchases to new user accounts if the same email has purchased previously as guest.
+
+2019-05-22 - version 4.8.12
+* Fix:    For email types 'after subscription expired', 'after subscription cancelled' and 'before active subscription expires' email should not be sent if the subscription was renewed at the time the email is scheduled.
+
 2019-05-08 - version 4.8.11
 * Fix:    Coupon expiry dates are not set.
 * Fix:    API permissions error with authentication.
