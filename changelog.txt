@@ -1,5 +1,9 @@
 *** WooCommerce Follow-Up Emails ***
 
+2019-07-02 - version 4.8.14
+* Fix:    Fatal Error in Points and Rewards integration when points are awarded on signup
+* Fix:    Wrong wording for template's coupon code
+
 2019-06-11 - version 4.8.13
 * Fix:    {order_pay_url} doesn't work in Abandonment Emails.
 * Fix:    Assign purchases to new user accounts if the same email has purchased previously as guest.
