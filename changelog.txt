@@ -1,5 +1,12 @@
 *** WooCommerce Follow-Up Emails ***
 
+2019-09-27 - version 4.8.16
+* Fix - Output of {booking_persons} variable in email places it in two lines.
+* Fix - Compatibility issue with WooCommerce Gutenberg Products Block.
+
+2019-08-08 - version 4.8.15
+* Tweak:  WC 3.7 compatibility.
+
 2019-07-02 - version 4.8.14
 * Fix:    Fatal Error in Points and Rewards integration when points are awarded on signup
 * Fix:    Wrong wording for template's coupon code
