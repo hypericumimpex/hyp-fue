@@ -2,10 +2,10 @@
 # This file is distributed under the GNU General Public License v3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: Follow-Up Emails 4.8.16\n"
+"Project-Id-Version: Follow-Up Emails 4.8.17\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/woocommerce-follow-up-emails\n"
-"POT-Creation-Date: 2019-09-27 14:08:14+00:00\n"
+"POT-Creation-Date: 2019-10-23 09:08:11+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3032,7 +3032,7 @@ msgid "Click Rate (%)"
 msgstr ""
 
 #: includes/reports/class-fue-reports.php:626
-#: includes/sending/class-fue-sending-scheduler.php:461
+#: includes/sending/class-fue-sending-scheduler.php:458
 msgid "Follow-up emails summary"
 msgstr ""
 
@@ -3243,31 +3243,31 @@ msgstr ""
 msgid "Email sent successfully"
 msgstr ""
 
-#: includes/sending/class-fue-sending-scheduler.php:928
+#: includes/sending/class-fue-sending-scheduler.php:925
 msgid "Email has been added to the queue (Queue ID #%d)"
 msgstr ""
 
-#: includes/sending/class-fue-sending-scheduler.php:945
+#: includes/sending/class-fue-sending-scheduler.php:942
 msgid "Cannot schedule an email with a missing message"
 msgstr ""
 
-#: includes/sending/class-fue-sending-scheduler.php:973
+#: includes/sending/class-fue-sending-scheduler.php:970
 msgid "One-time email has already been sent to %s"
 msgstr ""
 
-#: includes/sending/class-fue-sending-scheduler.php:1006
+#: includes/sending/class-fue-sending-scheduler.php:1003
 msgid "Similar queue item found (#%d). Adjusting schedule to send on %s"
 msgstr ""
 
-#: includes/sending/class-fue-sending-scheduler.php:1019
+#: includes/sending/class-fue-sending-scheduler.php:1016
 msgid "The email \"%s\" has been added to the queue (Queue ID #%d)"
 msgstr ""
 
-#: includes/sending/class-fue-sending-scheduler.php:1069
+#: includes/sending/class-fue-sending-scheduler.php:1066
 msgid "Email is scheduled to be sent on %s"
 msgstr ""
 
-#: includes/sending/class-fue-sending-scheduler.php:1089
+#: includes/sending/class-fue-sending-scheduler.php:1086
 msgid "Email has been removed from the scheduler"
 msgstr ""
 

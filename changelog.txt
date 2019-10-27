@@ -1,5 +1,8 @@
 *** WooCommerce Follow-Up Emails ***
 
+2019-10-23 - version 4.8.17
+* Tweak - Replace custom queries with get_posts() for WPML compatibility.
+
 2019-09-27 - version 4.8.16
 * Fix - Output of {booking_persons} variable in email places it in two lines.
 * Fix - Compatibility issue with WooCommerce Gutenberg Products Block.
