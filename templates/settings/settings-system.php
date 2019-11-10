@@ -14,6 +14,8 @@
 </style>
 <form action="admin-post.php" method="post" enctype="multipart/form-data">
 
+	<?php wp_nonce_field( 'fue-update-settings-verify' ); ?>
+
 	<h3><?php _e('Permissions', 'follow_up_emails'); ?></h3>
 
 	<p><?php _e('Select the User Roles that will be given permission to manage Follow-Up Emails.', 'follow_up_emails'); ?></p>

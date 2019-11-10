@@ -1,4 +1,6 @@
 <form action="admin-post.php" method="post" enctype="multipart/form-data">
+	<?php wp_nonce_field( 'fue-update-settings-verify' ); ?>
+
 	<h3><?php _e('Backup &amp; Restore', 'follow_up_emails'); ?></h3>
 
 	<p>

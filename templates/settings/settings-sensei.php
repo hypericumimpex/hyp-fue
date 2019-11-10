@@ -11,6 +11,8 @@ $deadline_period            = get_option('fue_sensei_course_incomplete_email_dea
 ?>
 <h3><?php _e('Sensei Settings', 'follow_up_emails'); ?></h3>
 
+<?php wp_nonce_field( 'fue-update-settings-verify' ); ?>
+
 <table class="form-table">
 	<tr>
 		<th colspan="2">

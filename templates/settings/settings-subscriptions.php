@@ -2,6 +2,8 @@
 
 <h3><?php _e('Notify me for Failed Subscription Payments', 'follow_up_emails'); ?></h3>
 
+<?php wp_nonce_field( 'fue-update-settings-verify' ); ?>
+
 <table class="form-table">
 	<tr>
 		<th><label for="subscription_failure_notification"><?php _e('Send Notification Email', 'follow_up_emails'); ?></label></th>

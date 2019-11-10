@@ -1,5 +1,12 @@
 *** WooCommerce Follow-Up Emails ***
 
+2019-11-05 - version 4.8.19
+* Fix - Single emails in batches delivered all at the same time.
+
+2019-11-05 - version 4.8.18
+* Tweak - Minor security improvements for the Settings screen.
+* Tweak - WC 3.8 compatibility.
+
 2019-10-23 - version 4.8.17
 * Tweak - Replace custom queries with get_posts() for WPML compatibility.
 

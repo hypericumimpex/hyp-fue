@@ -21,6 +21,8 @@ $spf = wp_parse_args( $spf, $spf_defaults );
 ?>
 <form action="admin-post.php" method="post" enctype="multipart/form-data">
 
+	<?php wp_nonce_field( 'fue-update-settings-verify' ); ?>
+
 	<h3><?php _e('DomainKeys Identified Mail (DKIM)', 'follow_up_emails'); ?></h3>
 	<p>A DomainKeys Identified Mail (DKIM) record adds a digital signature to emails your organization sends. Email recipient servers perform a check: “Does the signature match?” If so, then the email hasn’t been modified and is from a legitimate sender. Your DKIM DNS record lets the recipient server perform this verification. The DKIM check verifies that the message is signed and associated with the correct domain.</p>
 

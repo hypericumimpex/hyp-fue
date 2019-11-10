@@ -2,10 +2,10 @@
 # This file is distributed under the GNU General Public License v3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: Follow-Up Emails 4.8.17\n"
+"Project-Id-Version: Follow-Up Emails 4.8.19\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/woocommerce-follow-up-emails\n"
-"POT-Creation-Date: 2019-10-23 09:08:11+00:00\n"
+"POT-Creation-Date: 2019-11-05 22:28:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -861,8 +861,8 @@ msgid "Please log in to view your saved cart."
 msgstr ""
 
 #: includes/addons/class-fue-addon-woocommerce-cart.php:280
-#: includes/class-fue-admin-actions.php:1068
-#: includes/class-fue-admin-actions.php:1309
+#: includes/class-fue-admin-actions.php:1072
+#: includes/class-fue-admin-actions.php:1313
 msgid "Are you sure you want to do this?"
 msgstr ""
 
@@ -1476,7 +1476,7 @@ msgid "minute"
 msgstr ""
 
 #: includes/class-follow-up-emails.php:134 templates/reports/user_view.php:496
-#: templates/settings/settings-woocommerce-integrations.php:35
+#: templates/settings/settings-woocommerce-integrations.php:37
 msgid "minutes"
 msgstr ""
 
@@ -1485,7 +1485,7 @@ msgid "hour"
 msgstr ""
 
 #: includes/class-follow-up-emails.php:135 templates/reports/user_view.php:497
-#: templates/settings/settings-woocommerce-integrations.php:36
+#: templates/settings/settings-woocommerce-integrations.php:38
 msgid "hours"
 msgstr ""
 
@@ -1495,7 +1495,7 @@ msgstr ""
 
 #: includes/class-follow-up-emails.php:136
 #: templates/coupons/coupon-form.php:115 templates/reports/user_view.php:498
-#: templates/settings/settings-woocommerce-integrations.php:37
+#: templates/settings/settings-woocommerce-integrations.php:39
 msgid "days"
 msgstr ""
 
@@ -1601,79 +1601,79 @@ msgid_plural "%d emails deleted"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/class-fue-admin-actions.php:723
+#: includes/class-fue-admin-actions.php:727
 msgid "The email address is invalid"
 msgstr ""
 
-#: includes/class-fue-admin-actions.php:736
+#: includes/class-fue-admin-actions.php:740
 msgid "This email has already been added"
 msgstr ""
 
-#: includes/class-fue-admin-actions.php:774
+#: includes/class-fue-admin-actions.php:778
 msgid "Invalid email address passed."
 msgstr ""
 
-#: includes/class-fue-admin-actions.php:984
-#: includes/class-fue-admin-actions.php:1147
+#: includes/class-fue-admin-actions.php:988
+#: includes/class-fue-admin-actions.php:1151
 msgid "Bulk edit failed. Invalid Nonce."
 msgstr ""
 
-#: includes/class-fue-admin-actions.php:1004
-#: includes/class-fue-admin-actions.php:1198
+#: includes/class-fue-admin-actions.php:1008
+#: includes/class-fue-admin-actions.php:1202
 msgid "Error: Unknown action."
 msgstr ""
 
-#: includes/class-fue-admin-actions.php:1013
-#: includes/class-fue-admin-actions.php:1082
+#: includes/class-fue-admin-actions.php:1017
+#: includes/class-fue-admin-actions.php:1086
 msgid "%d list has been deleted"
 msgid_plural "%s lists have been deleted"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/class-fue-admin-actions.php:1169
+#: includes/class-fue-admin-actions.php:1173
 msgid "Queue #%1$d: %2$s"
 msgstr ""
 
-#: includes/class-fue-admin-actions.php:1175
+#: includes/class-fue-admin-actions.php:1179
 msgid "Queue #%d: Scheduled email sent manually"
 msgstr ""
 
-#: includes/class-fue-admin-actions.php:1207
+#: includes/class-fue-admin-actions.php:1211
 msgid "%d email has been activated"
 msgid_plural "%s emails have been activated"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/class-fue-admin-actions.php:1218
+#: includes/class-fue-admin-actions.php:1222
 msgid "%d email has been suspended"
 msgid_plural "%s emails have been suspended"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/class-fue-admin-actions.php:1229
-#: includes/class-fue-admin-actions.php:1332
+#: includes/class-fue-admin-actions.php:1233
+#: includes/class-fue-admin-actions.php:1336
 msgid "%d email has been deleted"
 msgid_plural "%s emails have been deleted"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/class-fue-admin-actions.php:1258
+#: includes/class-fue-admin-actions.php:1262
 msgid "Action failed. Invalid user ID."
 msgstr ""
 
-#: includes/class-fue-admin-actions.php:1269
+#: includes/class-fue-admin-actions.php:1273
 msgid "Action failed. Invalid product ID."
 msgstr ""
 
-#: includes/class-fue-admin-actions.php:1376
+#: includes/class-fue-admin-actions.php:1380
 msgid "Scheduled email updated successfully"
 msgstr ""
 
-#: includes/class-fue-admin-actions.php:1393
+#: includes/class-fue-admin-actions.php:1397
 msgid "Scheduled email deleted"
 msgstr ""
 
-#: includes/class-fue-admin-actions.php:1420
+#: includes/class-fue-admin-actions.php:1424
 msgid "Scheduled email sent manually"
 msgstr ""
 
@@ -2428,8 +2428,8 @@ msgstr ""
 #: includes/reports/class-fue-reports.php:718
 #: templates/add-ons/wootickets-digest-email.php:6
 #: templates/coupons/coupon-list-table.php:108 templates/optout_table.php:33
-#: templates/settings/settings-subscriptions.php:16
-#: templates/settings/settings-wootickets.php:15
+#: templates/settings/settings-subscriptions.php:18
+#: templates/settings/settings-wootickets.php:17
 #: templates/subscribers_table.php:69
 msgid "Email Address"
 msgstr ""
@@ -2454,7 +2454,7 @@ msgid "Filter by list"
 msgstr ""
 
 #: includes/class-fue-subscribers-list-table.php:69
-#: templates/settings/settings-woocommerce-subscribers.php:52
+#: templates/settings/settings-woocommerce-subscribers.php:54
 #: templates/subscribers-table.php:60 templates/subscribers_table.php:54
 msgid "Uncategorized"
 msgstr ""
@@ -4443,7 +4443,7 @@ msgid "All these emails will be blind carbon copied to this address"
 msgstr ""
 
 #: templates/meta-boxes/email-details.php:75
-#: templates/settings/settings-system.php:138
+#: templates/settings/settings-system.php:140
 msgid "From/Reply-To Name"
 msgstr ""
 
@@ -4526,7 +4526,7 @@ msgid "Minute"
 msgstr ""
 
 #: templates/meta-boxes/email-triggers.php:88
-#: templates/settings/settings-tools.php:47
+#: templates/settings/settings-tools.php:49
 msgid "List"
 msgstr ""
 
@@ -5103,13 +5103,13 @@ msgstr ""
 msgid "Send again in:"
 msgstr ""
 
-#: templates/send_manual_form.php:134 templates/settings/settings-sensei.php:25
-#: templates/settings/settings-sensei.php:63
+#: templates/send_manual_form.php:134 templates/settings/settings-sensei.php:27
+#: templates/settings/settings-sensei.php:65
 msgid "Email Subject"
 msgstr ""
 
-#: templates/send_manual_form.php:143 templates/settings/settings-sensei.php:33
-#: templates/settings/settings-sensei.php:71
+#: templates/send_manual_form.php:143 templates/settings/settings-sensei.php:35
+#: templates/settings/settings-sensei.php:73
 msgid "Email Body"
 msgstr ""
 
@@ -5157,116 +5157,116 @@ msgstr ""
 msgid "%d subscribers added"
 msgstr ""
 
-#: templates/settings/settings-auth.php:24
+#: templates/settings/settings-auth.php:26
 msgid "DomainKeys Identified Mail (DKIM)"
 msgstr ""
 
-#: templates/settings/settings-auth.php:29
+#: templates/settings/settings-auth.php:31
 msgid "Enable DKIM"
 msgstr ""
 
-#: templates/settings/settings-auth.php:35
+#: templates/settings/settings-auth.php:37
 msgid "DKIM Domain"
 msgstr ""
 
-#: templates/settings/settings-auth.php:39
+#: templates/settings/settings-auth.php:41
 msgid "DKIM Selector Prefix"
 msgstr ""
 
-#: templates/settings/settings-auth.php:43
+#: templates/settings/settings-auth.php:45
 msgid "DKIM Identity"
 msgstr ""
 
-#: templates/settings/settings-auth.php:46
+#: templates/settings/settings-auth.php:48
 msgid "Optional. Usually the email address used as the source of the email"
 msgstr ""
 
-#: templates/settings/settings-auth.php:50
+#: templates/settings/settings-auth.php:52
 msgid "DKIM Passphrase"
 msgstr ""
 
-#: templates/settings/settings-auth.php:53
+#: templates/settings/settings-auth.php:55
 msgid "Optional. Used if your key is encrypted."
 msgstr ""
 
-#: templates/settings/settings-auth.php:61
+#: templates/settings/settings-auth.php:63
 msgid ""
 "To generate new keys, please enable the OpenSSL extension in your PHP "
 "installation."
 msgstr ""
 
-#: templates/settings/settings-auth.php:64
+#: templates/settings/settings-auth.php:66
 msgid "Key Size"
 msgstr ""
 
-#: templates/settings/settings-auth.php:80
+#: templates/settings/settings-auth.php:82
 msgid "Generate DKIM Keys"
 msgstr ""
 
-#: templates/settings/settings-auth.php:87
+#: templates/settings/settings-auth.php:89
 msgid "DKIM Public Key"
 msgstr ""
 
-#: templates/settings/settings-auth.php:91
+#: templates/settings/settings-auth.php:93
 msgid "DKIM Private Key"
 msgstr ""
 
-#: templates/settings/settings-auth.php:103
-#: templates/settings/settings-auth.php:166
+#: templates/settings/settings-auth.php:105
+#: templates/settings/settings-auth.php:168
 msgid "DNS Entry"
 msgstr ""
 
-#: templates/settings/settings-auth.php:106
+#: templates/settings/settings-auth.php:108
 msgid "Host/Name"
 msgstr ""
 
-#: templates/settings/settings-auth.php:111
+#: templates/settings/settings-auth.php:113
 msgid "TXT Value"
 msgstr ""
 
-#: templates/settings/settings-auth.php:123
+#: templates/settings/settings-auth.php:125
 msgid "Sender Policy Framework (SPF)"
 msgstr ""
 
-#: templates/settings/settings-auth.php:128
+#: templates/settings/settings-auth.php:130
 msgid "Enable SPF"
 msgstr ""
 
-#: templates/settings/settings-auth.php:134
+#: templates/settings/settings-auth.php:136
 msgid "IP Check"
 msgstr ""
 
-#: templates/settings/settings-auth.php:137
+#: templates/settings/settings-auth.php:139
 msgid "Optional"
 msgstr ""
 
-#: templates/settings/settings-auth.php:141
+#: templates/settings/settings-auth.php:143
 msgid "Your Domain"
 msgstr ""
 
-#: templates/settings/settings-auth.php:144
+#: templates/settings/settings-auth.php:146
 msgid "Check SPF Record"
 msgstr ""
 
-#: templates/settings/settings-auth.php:153
+#: templates/settings/settings-auth.php:155
 msgid ""
 "SPF record found for <code id=\"spf_result_domain\"></code> - <code "
 "id=\"spf_result_data\"></code>"
 msgstr ""
 
-#: templates/settings/settings-auth.php:161
+#: templates/settings/settings-auth.php:163
 msgid "Generate SPF Record"
 msgstr ""
 
-#: templates/settings/settings-auth.php:171
+#: templates/settings/settings-auth.php:173
 msgid "You should add this DNS record to your domain's DNS configuration."
 msgstr ""
 
-#: templates/settings/settings-auth.php:182
-#: templates/settings/settings-integration.php:8
-#: templates/settings/settings-subscribers.php:38
-#: templates/settings/settings-system.php:286
-#: templates/settings/settings-tools.php:135
+#: templates/settings/settings-auth.php:184
+#: templates/settings/settings-integration.php:10
+#: templates/settings/settings-subscribers.php:40
+#: templates/settings/settings-system.php:288
+#: templates/settings/settings-tools.php:137
 msgid "Save Settings"
 msgstr ""
 
@@ -5274,51 +5274,51 @@ msgstr ""
 msgid "Sensei Settings"
 msgstr ""
 
-#: templates/settings/settings-sensei.php:19
+#: templates/settings/settings-sensei.php:21
 msgid ""
 "Send email to the course creator when all learners have taken and passed "
 "the course"
 msgstr ""
 
-#: templates/settings/settings-sensei.php:35
-#: templates/settings/settings-sensei.php:73
+#: templates/settings/settings-sensei.php:37
+#: templates/settings/settings-sensei.php:75
 msgid "Email Variables"
 msgstr ""
 
-#: templates/settings/settings-sensei.php:50
+#: templates/settings/settings-sensei.php:52
 msgid ""
 "Send an email to the course creator when there are learners who haven't "
 "completed a course in "
 msgstr ""
 
-#: templates/settings/settings-subscribers.php:5
+#: templates/settings/settings-subscribers.php:7
 msgid "Upload CSV of Emails"
 msgstr ""
 
-#: templates/settings/settings-subscribers.php:7
+#: templates/settings/settings-subscribers.php:9
 msgid ""
 "Import your existing mailing lists and email addresses. Then go to <a "
 "href=\"admin.php?page=followup-emails-subscribers\">Subscribers</a> to "
 "assign to lists and manage your addresses."
 msgstr ""
 
-#: templates/settings/settings-subscribers.php:13
+#: templates/settings/settings-subscribers.php:15
 msgid "Upload"
 msgstr ""
 
-#: templates/settings/settings-subscribers.php:18
+#: templates/settings/settings-subscribers.php:20
 msgid "Page Endpoints"
 msgstr ""
 
-#: templates/settings/settings-subscribers.php:22
+#: templates/settings/settings-subscribers.php:24
 msgid "Unsubscribe Page"
 msgstr ""
 
-#: templates/settings/settings-subscribers.php:26
+#: templates/settings/settings-subscribers.php:28
 msgid "Email Subscriptions Page"
 msgstr ""
 
-#: templates/settings/settings-subscribers.php:30
+#: templates/settings/settings-subscribers.php:32
 msgid "Email Preferences Page"
 msgstr ""
 
@@ -5326,178 +5326,178 @@ msgstr ""
 msgid "Notify me for Failed Subscription Payments"
 msgstr ""
 
-#: templates/settings/settings-subscriptions.php:7
-#: templates/settings/settings-wootickets.php:7
+#: templates/settings/settings-subscriptions.php:9
+#: templates/settings/settings-wootickets.php:9
 msgid "Send Notification Email"
 msgstr ""
 
-#: templates/settings/settings-subscriptions.php:21
-#: templates/settings/settings-wootickets.php:20
+#: templates/settings/settings-subscriptions.php:23
+#: templates/settings/settings-wootickets.php:22
 msgid "Comma-separated email addresses of recipients"
 msgstr ""
 
-#: templates/settings/settings-system.php:17
+#: templates/settings/settings-system.php:19
 msgid "Permissions"
 msgstr ""
 
-#: templates/settings/settings-system.php:19
+#: templates/settings/settings-system.php:21
 msgid ""
 "Select the User Roles that will be given permission to manage Follow-Up "
 "Emails."
 msgstr ""
 
-#: templates/settings/settings-system.php:24
+#: templates/settings/settings-system.php:26
 msgid "Roles"
 msgstr ""
 
-#: templates/settings/settings-system.php:52
+#: templates/settings/settings-system.php:54
 msgid "Daily Emails Summary"
 msgstr ""
 
-#: templates/settings/settings-system.php:54
+#: templates/settings/settings-system.php:56
 msgid ""
 "Turn on a daily summary of all emails sent to users, and sent the email "
 "addresses that you want to be notified with this summary."
 msgstr ""
 
-#: templates/settings/settings-system.php:59
+#: templates/settings/settings-system.php:61
 msgid "Enable"
 msgstr ""
 
-#: templates/settings/settings-system.php:62
+#: templates/settings/settings-system.php:64
 msgid "Enable the Daily Email Summary"
 msgstr ""
 
-#: templates/settings/settings-system.php:66
+#: templates/settings/settings-system.php:68
 msgid "Email Address(es)"
 msgstr ""
 
-#: templates/settings/settings-system.php:69
+#: templates/settings/settings-system.php:71
 msgid "comma separated"
 msgstr ""
 
-#: templates/settings/settings-system.php:73
-#: templates/settings/settings-wootickets.php:33
+#: templates/settings/settings-system.php:75
+#: templates/settings/settings-wootickets.php:35
 msgid "Preferred Time"
 msgstr ""
 
-#: templates/settings/settings-system.php:112
+#: templates/settings/settings-system.php:114
 msgid "Email Settings"
 msgstr ""
 
-#: templates/settings/settings-system.php:114
+#: templates/settings/settings-system.php:116
 msgid ""
 "You can change the default from and reply-to name and email for all your "
 "emails. You can also customize these on every individual email."
 msgstr ""
 
-#: templates/settings/settings-system.php:120
+#: templates/settings/settings-system.php:122
 msgid "Staging mode"
 msgstr ""
 
-#: templates/settings/settings-system.php:124
+#: templates/settings/settings-system.php:126
 msgid "All emails will be prevented from being sent out."
 msgstr ""
 
-#: templates/settings/settings-system.php:129
+#: templates/settings/settings-system.php:131
 msgid "BCC"
 msgstr ""
 
-#: templates/settings/settings-system.php:133
+#: templates/settings/settings-system.php:135
 msgid "All emails will be blind carbon copied to this address."
 msgstr ""
 
-#: templates/settings/settings-system.php:142
+#: templates/settings/settings-system.php:144
 msgid "The name that your emails will come from and replied to."
 msgstr ""
 
-#: templates/settings/settings-system.php:147
+#: templates/settings/settings-system.php:149
 msgid "From/Reply-To Email"
 msgstr ""
 
-#: templates/settings/settings-system.php:151
+#: templates/settings/settings-system.php:153
 msgid "The email address that your emails will come from and replied to."
 msgstr ""
 
-#: templates/settings/settings-system.php:159
+#: templates/settings/settings-system.php:161
 msgid "Bounce Settings"
 msgstr ""
 
-#: templates/settings/settings-system.php:161
+#: templates/settings/settings-system.php:163
 msgid ""
 "Which email address should all of your bounced emails be sent to? No "
 "premium version needed."
 msgstr ""
 
-#: templates/settings/settings-system.php:167
+#: templates/settings/settings-system.php:169
 msgid "Bounce Address"
 msgstr ""
 
-#: templates/settings/settings-system.php:171
+#: templates/settings/settings-system.php:173
 msgid "Undelivered emails will be sent to this address."
 msgstr ""
 
-#: templates/settings/settings-system.php:176
+#: templates/settings/settings-system.php:178
 msgid "Automatic Bounce Handling"
 msgstr ""
 
-#: templates/settings/settings-system.php:184
+#: templates/settings/settings-system.php:186
 msgid ""
 "To enable the automatic handling of bounced emails, enter the POP3 account "
 "of the bounce address above."
 msgstr ""
 
-#: templates/settings/settings-system.php:189
+#: templates/settings/settings-system.php:191
 msgid "Server Address"
 msgstr ""
 
-#: templates/settings/settings-system.php:197
+#: templates/settings/settings-system.php:199
 msgid "Port"
 msgstr ""
 
-#: templates/settings/settings-system.php:205
+#: templates/settings/settings-system.php:207
 msgid "Use SSL"
 msgstr ""
 
-#: templates/settings/settings-system.php:213
+#: templates/settings/settings-system.php:215
 msgid "Username"
 msgstr ""
 
-#: templates/settings/settings-system.php:221
+#: templates/settings/settings-system.php:223
 msgid "Password"
 msgstr ""
 
-#: templates/settings/settings-system.php:229
+#: templates/settings/settings-system.php:231
 msgid "Delete Messages"
 msgstr ""
 
-#: templates/settings/settings-system.php:233
+#: templates/settings/settings-system.php:235
 msgid "Delete emails to keep the mailbox clean"
 msgstr ""
 
-#: templates/settings/settings-system.php:238
+#: templates/settings/settings-system.php:240
 msgid "Soft Bounces"
 msgstr ""
 
-#: templates/settings/settings-system.php:243
+#: templates/settings/settings-system.php:245
 msgid ""
 "Attemp to resend up to %s times with an interval of %s minutes between each "
 "send before marking as a Hard Bounce."
 msgstr ""
 
-#: templates/settings/settings-system.php:254
+#: templates/settings/settings-system.php:256
 msgid "Test Bounce Settings"
 msgstr ""
 
-#: templates/settings/settings-system.php:256
+#: templates/settings/settings-system.php:258
 msgid "Sending test email..."
 msgstr ""
 
-#: templates/settings/settings-system.php:261
+#: templates/settings/settings-system.php:263
 msgid "Single Emails Sending Schedule"
 msgstr ""
 
-#: templates/settings/settings-system.php:262
+#: templates/settings/settings-system.php:264
 msgid ""
 "Sending manual emails at to large numbers of recipients could cause mail "
 "server issues with your host. For example, Gmail limits you to 500 sends "
@@ -5506,124 +5506,124 @@ msgid ""
 "follow-up-emails/\">Read here for more</a>."
 msgstr ""
 
-#: templates/settings/settings-system.php:268
+#: templates/settings/settings-system.php:270
 msgid "Send manual emails in batches of %s emails every %s minutes"
 msgstr ""
 
-#: templates/settings/settings-tools.php:2
+#: templates/settings/settings-tools.php:4
 msgid "Backup &amp; Restore"
 msgstr ""
 
-#: templates/settings/settings-tools.php:5
+#: templates/settings/settings-tools.php:7
 msgid "Backup your emails using the WordPress import and export functionality."
 msgstr ""
 
-#: templates/settings/settings-tools.php:7
+#: templates/settings/settings-tools.php:9
 msgid "Import"
 msgstr ""
 
-#: templates/settings/settings-tools.php:8
+#: templates/settings/settings-tools.php:10
 msgid "Export"
 msgstr ""
 
-#: templates/settings/settings-tools.php:15
+#: templates/settings/settings-tools.php:17
 msgid "Download a Backup of the Settings"
 msgstr ""
 
-#: templates/settings/settings-tools.php:20
+#: templates/settings/settings-tools.php:22
 msgid "Restore Backup"
 msgstr ""
 
-#: templates/settings/settings-tools.php:24
+#: templates/settings/settings-tools.php:26
 msgid "Emails JSON"
 msgstr ""
 
-#: templates/settings/settings-tools.php:28
+#: templates/settings/settings-tools.php:30
 msgid "Emails CSV from pre-4.0 installs only"
 msgstr ""
 
-#: templates/settings/settings-tools.php:32
+#: templates/settings/settings-tools.php:34
 msgid "Settings CSV from all versions"
 msgstr ""
 
-#: templates/settings/settings-tools.php:44
+#: templates/settings/settings-tools.php:46
 msgid "Export Mailing List"
 msgstr ""
 
-#: templates/settings/settings-tools.php:50
+#: templates/settings/settings-tools.php:52
 msgid "All lists"
 msgstr ""
 
-#: templates/settings/settings-tools.php:63
+#: templates/settings/settings-tools.php:65
 msgid "Export Emails"
 msgstr ""
 
-#: templates/settings/settings-tools.php:69
-#: templates/settings/settings-tools.php:96
-#: templates/settings/settings-tools.php:109
+#: templates/settings/settings-tools.php:71
+#: templates/settings/settings-tools.php:98
+#: templates/settings/settings-tools.php:111
 msgid "Please wait..."
 msgstr ""
 
-#: templates/settings/settings-tools.php:75
+#: templates/settings/settings-tools.php:77
 msgid "Action Scheduler Logging"
 msgstr ""
 
-#: templates/settings/settings-tools.php:76
+#: templates/settings/settings-tools.php:78
 msgid ""
 "The Action Scheduler, by default, logs completed actions to the comments "
 "for debugging purposes. Some users have inquired, but this is not a bug. "
 "You can turn off, and/or delete the actions log with the settings below."
 msgstr ""
 
-#: templates/settings/settings-tools.php:79
+#: templates/settings/settings-tools.php:81
 msgid "Disable email logging"
 msgstr ""
 
-#: templates/settings/settings-tools.php:84
+#: templates/settings/settings-tools.php:86
 msgid "Delete existing logs"
 msgstr ""
 
-#: templates/settings/settings-tools.php:89
+#: templates/settings/settings-tools.php:91
 msgid "Remove Old Daily Summary Data"
 msgstr ""
 
-#: templates/settings/settings-tools.php:92
+#: templates/settings/settings-tools.php:94
 msgid "Delete Old Summary Data"
 msgstr ""
 
-#: templates/settings/settings-tools.php:102
+#: templates/settings/settings-tools.php:104
 msgid "Reset Stats Data"
 msgstr ""
 
-#: templates/settings/settings-tools.php:105
+#: templates/settings/settings-tools.php:107
 msgid "Delete Stats Data"
 msgstr ""
 
-#: templates/settings/settings-tools.php:115
+#: templates/settings/settings-tools.php:117
 msgid "Debugging"
 msgstr ""
 
-#: templates/settings/settings-tools.php:119
+#: templates/settings/settings-tools.php:121
 msgid "Log to file"
 msgstr ""
 
-#: templates/settings/settings-tools.php:122
+#: templates/settings/settings-tools.php:124
 msgid "None"
 msgstr ""
 
-#: templates/settings/settings-tools.php:123
+#: templates/settings/settings-tools.php:125
 msgid "Error"
 msgstr ""
 
-#: templates/settings/settings-tools.php:124
+#: templates/settings/settings-tools.php:126
 msgid "Info"
 msgstr ""
 
-#: templates/settings/settings-tools.php:125
+#: templates/settings/settings-tools.php:127
 msgid "Debug"
 msgstr ""
 
-#: templates/settings/settings-tools.php:126
+#: templates/settings/settings-tools.php:128
 msgid "All"
 msgstr ""
 
@@ -5644,29 +5644,29 @@ msgid ""
 "templates and choose them instead of the default WooCommerce template."
 msgstr ""
 
-#: templates/settings/settings-woocommerce-integrations.php:12
+#: templates/settings/settings-woocommerce-integrations.php:14
 msgid ""
 "Click here to disable the wrapping of styles in the WooCommerce email "
 "templates."
 msgstr ""
 
-#: templates/settings/settings-woocommerce-integrations.php:20
+#: templates/settings/settings-woocommerce-integrations.php:22
 msgid "Abandoned Cart Settings"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-integrations.php:22
+#: templates/settings/settings-woocommerce-integrations.php:24
 msgid "Cart Conversion Time"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-integrations.php:24
+#: templates/settings/settings-woocommerce-integrations.php:26
 msgid "Record cart conversions up to %s days after an email has been sent."
 msgstr ""
 
-#: templates/settings/settings-woocommerce-integrations.php:26
+#: templates/settings/settings-woocommerce-integrations.php:28
 msgid "Set Cart as Abandoned After"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-integrations.php:32
+#: templates/settings/settings-woocommerce-integrations.php:34
 msgid "Carts older than %s %s are to be considered as abandoned."
 msgstr ""
 
@@ -5674,43 +5674,43 @@ msgstr ""
 msgid "Email List Preferences"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-subscribers.php:10
+#: templates/settings/settings-woocommerce-subscribers.php:12
 msgid "Allow customers to manage their email list preferences from their account"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-subscribers.php:16
+#: templates/settings/settings-woocommerce-subscribers.php:18
 msgid "Display Title"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-subscribers.php:24
+#: templates/settings/settings-woocommerce-subscribers.php:26
 msgid "Update Button Text"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-subscribers.php:34
+#: templates/settings/settings-woocommerce-subscribers.php:36
 msgid "Checkout Subscription"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-subscribers.php:41
+#: templates/settings/settings-woocommerce-subscribers.php:43
 msgid "Allow customers to subscribe to the newsletter on the checkout form"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-subscribers.php:47
+#: templates/settings/settings-woocommerce-subscribers.php:49
 msgid "Add subscribers to this list"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-subscribers.php:62
+#: templates/settings/settings-woocommerce-subscribers.php:64
 msgid "Checkout Field Label"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-subscribers.php:75
+#: templates/settings/settings-woocommerce-subscribers.php:77
 msgid "Default Checkbox State"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-subscribers.php:83
+#: templates/settings/settings-woocommerce-subscribers.php:85
 msgid "Checked"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-subscribers.php:84
+#: templates/settings/settings-woocommerce-subscribers.php:86
 msgid "Unchecked"
 msgstr ""
 
@@ -5718,7 +5718,7 @@ msgstr ""
 msgid "Rescan Customer Orders"
 msgstr ""
 
-#: templates/settings/settings-woocommerce-tools.php:5
+#: templates/settings/settings-woocommerce-tools.php:7
 msgid "Scan Customer Orders"
 msgstr ""
 
@@ -5726,15 +5726,15 @@ msgstr ""
 msgid "Event Booking Notification"
 msgstr ""
 
-#: templates/settings/settings-wootickets.php:24
+#: templates/settings/settings-wootickets.php:26
 msgid "Notification Schedule"
 msgstr ""
 
-#: templates/settings/settings-wootickets.php:27
+#: templates/settings/settings-wootickets.php:29
 msgid "Send notification on every booking"
 msgstr ""
 
-#: templates/settings/settings-wootickets.php:28
+#: templates/settings/settings-wootickets.php:30
 msgid "Send notification once daily"
 msgstr ""
 

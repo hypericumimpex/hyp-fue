@@ -2,6 +2,8 @@
 
 <h3><?php _e('Email List Preferences', 'follow_up_emails'); ?></h3>
 
+<?php wp_nonce_field( 'fue-update-settings-verify' ); ?>
+
 <table class="form-table">
 	<tr>
 		<th colspan="2">

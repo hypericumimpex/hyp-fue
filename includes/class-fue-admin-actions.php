@@ -387,6 +387,10 @@ class FUE_Admin_Actions {
 	 * update_settings method.
 	 */
 	public static function update_settings() {
+		if ( ! current_user_can( 'manage_options' ) || ! check_admin_referer( 'fue-update-settings-verify' ) ) {
+			exit;
+		}
+
 		$wpdb     = Follow_Up_Emails::instance()->wpdb;
 		$data     = stripslashes_deep( $_POST );
 		$section  = $_POST['section'];

@@ -1471,7 +1471,6 @@ class FUE_AJAX {
 			$args                       = $data;
 			$args['recipients']         = array();
 			$args['schedule_email']     = true;
-			$args['schedule_timestamp'] = $data['batch_send_date'];
 
 			foreach ( $recipients_part as $recipient_key => $recipient ) {
 				$data['recipient_number']++;
@@ -1481,6 +1480,7 @@ class FUE_AJAX {
 				// if the number of recipients per batch is reached,
 				// adjust the send time and start a new batch
 				if ( $data['recipient_number'] == $emails_per_batch ) {
+					$args['schedule_timestamp'] = $data['batch_send_date'];
 					FUE_Sending_Scheduler::queue_manual_emails( $args );
 
 					$send_data[] = array(

@@ -1,4 +1,6 @@
 <form action="admin-post.php" method="post" enctype="multipart/form-data">
+	<?php wp_nonce_field( 'fue-update-settings-verify' ); ?>
+
 	<input type="hidden" name="action" value="fue_followup_save_settings" />
 	<input type="hidden" name="section" value="<?php echo $tab; ?>" />
 

@@ -1,5 +1,7 @@
 <form action="admin-post.php" method="post" enctype="multipart/form-data">
 
+	<?php wp_nonce_field( 'fue-update-settings-verify' ); ?>
+
 	<?php do_action( 'fue_settings_integration' ); ?>
 
 	<p class="submit">

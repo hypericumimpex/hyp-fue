@@ -4,6 +4,8 @@
 
 <p><?php _e('You can easily remove WooCommerce email styles to quickly be able to add full HTML to your emails directly in the email editor. Simply check this box, and the default WooCommerce styling will be removed from the emails you send via Follow-up Emails. Conversely, you can create your own templates and choose them instead of the default WooCommerce template.', 'follow_up_emails'); ?></p>
 
+<?php wp_nonce_field( 'fue-update-settings-verify' ); ?>
+
 <table class="form-table">
 	<tr>
 		<th>
